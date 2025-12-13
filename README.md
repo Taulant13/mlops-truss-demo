@@ -131,10 +131,3 @@ Result: NEGATIVE (confidence: 99.95%)
 - [Truss Documentation](https://truss.baseten.co/)
 - [Baseten Platform](https://www.baseten.co/)
 
-## License
-
-MIT
-
----
-
-*This project was created for the MLOps course (HSLU) - Project 3: MLOps Tools*
