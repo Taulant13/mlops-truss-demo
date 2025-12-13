@@ -24,14 +24,13 @@ A demonstration project comparing traditional ML model deployment vs deployment 
 │   └── test_model.py           # Test script
 │
 ├── truss_deployment/           # Truss-based deployment
-│   ├── config.yaml             # Configuration (~20 lines)
+│   ├── config.yaml             # Configuration (~5 lines)
 │   ├── model/
 │   │   └── model.py            # Model class (~30 lines)
 │   └── test_model.py           # Test script
 │
 ├── README.md
-├── SETUP_GUIDE.md              # Step-by-step instructions
-└── video_script.txt            # Presentation script
+└── SETUP_GUIDE.md              # Step-by-step instructions
 ```
 
 ## The Use Case
@@ -102,7 +101,7 @@ Result: NEGATIVE (confidence: 99.95%)
 | Aspect | Manual (Flask) | Truss |
 |--------|----------------|-------|
 | Lines of code | ~100+ | ~30 |
-| Files needed | 3 (app.py, Dockerfile, requirements.txt) | 2 (model.py, config.yaml) |
+| Files needed | 4 (app.py, Dockerfile, requirements.txt, test_model.py) | 3 (model.py, config.yaml, test_model.py) |
 | Docker knowledge | Required | Not needed |
 | Live reload | No | Yes |
 | Health checks | Manual implementation | Automatic |

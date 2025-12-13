@@ -13,7 +13,7 @@ class Model:
     def load(self):
         """Load the model once at startup."""
         self._model = pipeline(
-            "text-classification",
+            "sentiment-analysis",
             model="distilbert-base-uncased-finetuned-sst-2-english"
         )
 
