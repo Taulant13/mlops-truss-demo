@@ -1,27 +1,4 @@
-# Truss Configuration
-# Simple YAML file replaces Dockerfile + requirements.txt
-
 model_name: sentiment-analysis
-
-# Python dependencies - just list what you need
-# Truss handles the rest (no version conflicts to debug!)
 requirements:
-  - transformers==4.36.0
   - torch==2.1.0
-
-# Python version
-python_version: "3.10"
-
-# Resource configuration (optional)
-resources:
-  cpu: "2"
-  memory: 4Gi
-
-# That's it! No Dockerfile needed.
-# Truss handles:
-# - Base image selection
-# - System dependencies
-# - Environment variables
-# - Health checks
-# - HTTP server setup
-# - Request/response handling
+  - transformers==4.36.0
