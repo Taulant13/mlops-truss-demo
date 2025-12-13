@@ -47,7 +47,7 @@ Both deployments serve the same ML model: a HuggingFace sentiment analysis model
 ### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/mlops-truss-demo.git
+git clone https://github.com/Taulant13/mlops-truss-demo.git
 cd mlops-truss-demo
 
 # Install dependencies
