@@ -85,7 +85,7 @@ cd truss_deployment
 
 **Step 1:** Get your [Baseten API Key](http://app.baseten.co/settings/account/api_keys)
 
-**Step 2:** Deploy your model
+**Step 2:** Deploy your model (development)
 ```bash
 truss push
 ```
@@ -94,6 +94,18 @@ truss push
 ```bash
 truss predict -d '"I love this product!"'
 ```
+
+**Step 4 (Optional):** Use live-reload for rapid iteration
+```bash
+truss watch
+```
+
+**Step 5:** Promote to production when ready
+```bash
+truss push --publish
+```
+
+> **Dev vs Prod:** Development deployments support live-reloading and are limited to one replica (no autoscaling). Production deployments are stable, autoscaled, and optimized for real-world traffic.
 
 **Output:**
 ```
