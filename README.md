@@ -26,7 +26,7 @@ A demonstration project comparing traditional ML model deployment vs deployment 
 ├── truss_deployment/           # Truss-based deployment
 │   ├── config.yaml             # Configuration (~5 lines)
 │   ├── model/
-│   │   └── model.py            # Model class (~30 lines)
+│   │   └── model.py            # Model class (~20 lines)
 │   └── test_model.py           # Test script
 │
 └── README.md
