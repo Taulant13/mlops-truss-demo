@@ -1,7 +1,3 @@
-"""
-Truss Model Deployment
-Simple sentiment analysis model using HuggingFace transformers.
-"""
 
 from transformers import pipeline
 
