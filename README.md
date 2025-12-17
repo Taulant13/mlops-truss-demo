@@ -64,7 +64,7 @@ cd manual_deployment
 python app.py
 
 # In another terminal, test the API (cmd)
-curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -d "{\"text\": \"I love this product!\"}"
+curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -d "{\"text\": \"I love this!\"}"
 ```
 
 **Response:**
