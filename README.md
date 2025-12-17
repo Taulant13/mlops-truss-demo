@@ -29,8 +29,7 @@ A demonstration project comparing traditional ML model deployment vs deployment 
 │   │   └── model.py            # Model class (~30 lines)
 │   └── test_model.py           # Test script
 │
-├── README.md
-└── SETUP_GUIDE.md              # Step-by-step instructions
+└── README.md
 ```
 
 ## The Use Case
@@ -82,9 +81,18 @@ curl -X POST http://localhost:8080/predict -H "Content-Type: application/json" -
 ```bash
 # Navigate to folder
 cd truss_deployment
+```
 
-# Test the model
-python test_model.py
+**Step 1:** Get your [Baseten API Key](http://app.baseten.co/settings/account/api_keys)
+
+**Step 2:** Deploy your model
+```bash
+truss push
+```
+
+**Step 3:** Invoke your model
+```bash
+truss predict -d '"I love this product!"'
 ```
 
 **Output:**
